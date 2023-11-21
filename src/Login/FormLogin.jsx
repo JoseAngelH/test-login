@@ -33,7 +33,7 @@ const FormLogin = () => {
             navigate("/inicio");
         } catch (error) {
             if(error.code === "auth/user-not-found"){
-                setError('El correo que ingresaste no existe');
+                setError('El correo que ingresaste no existe, intenta de nuevo');
             }
             if(error.code === "auth/wrong-password"){
                 setError('La contraseña es incorrecta');
